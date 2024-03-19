@@ -17,6 +17,11 @@
         margin-bottom: 5rem !important;
       }
     }
+    #about {
+      h2 {
+        font-size: 3rem !important;
+      }
+    }
   }
 }
 
@@ -35,6 +40,16 @@
         }
         i {
           display: none;
+        }
+      }
+    }
+  }
+  #main {
+    #about {
+      .content {
+        width: 100% !important;
+        h2 {
+          font-size: 2rem !important;
         }
       }
     }
@@ -59,6 +74,11 @@
     #services {
       .wrapper {
         height: 19rem !important;
+      }
+    }
+    #about {
+      h2 {
+        font-size: 2rem !important;
       }
     }
   }
