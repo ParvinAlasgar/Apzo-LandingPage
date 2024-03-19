@@ -1,0 +1,41 @@
+html {
+  font-size: 1rem;
+}
+%bck_img {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+// Header
+#header {
+  background-image: url(../images/campaign-creators-gMsnXqILjp4-unsplash.jpg);
+  @extend %bck_img;
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  nav {
+    background-color: rgba($color: #000000, $alpha: 0.3);
+  }
+  .content {
+    h1 {
+      font-size: 4rem;
+    }
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    a {
+      border-radius: 25px;
+    }
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0.4;
+    z-index: -1;
+  }
+}
