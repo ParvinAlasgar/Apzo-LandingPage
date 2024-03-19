@@ -132,4 +132,34 @@ html {
       }
     }
   }
+  // Testimonial
+  #testimonial {
+    background-image: url(../images/brooke-cagle-g1Kr4Ozfoac-unsplash.jpg);
+    @extend %bck_img;
+    position: relative;
+    z-index: 1;
+    padding: 15rem 0;
+    h2 {
+      font-size: 4rem;
+    }
+    .line {
+      width: 6rem;
+      padding: 0.2rem 0;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: #000;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      opacity: 0.4;
+      z-index: -1;
+    }
+    .author {
+      img {
+        width: 4rem;
+      }
+    }
+  }
 }

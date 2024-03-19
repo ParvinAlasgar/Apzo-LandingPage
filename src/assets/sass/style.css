@@ -2,7 +2,7 @@ html {
   font-size: 1rem;
 }
 
-#main #works, #main #about, #main #services, #header {
+#main #testimonial, #main #works, #main #about, #main #services, #header {
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -121,6 +121,32 @@ html {
 #main #works .wrapper:hover img {
   transform: scale(1.1);
 }
+#main #testimonial {
+  background-image: url(../images/brooke-cagle-g1Kr4Ozfoac-unsplash.jpg);
+  position: relative;
+  z-index: 1;
+  padding: 15rem 0;
+}
+#main #testimonial h2 {
+  font-size: 4rem;
+}
+#main #testimonial .line {
+  width: 6rem;
+  padding: 0.2rem 0;
+}
+#main #testimonial::after {
+  content: "";
+  position: absolute;
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0.4;
+  z-index: -1;
+}
+#main #testimonial .author img {
+  width: 4rem;
+}
 
 @media only screen and (max-width: 992px) {
   #header h1 {
@@ -130,6 +156,9 @@ html {
     margin-bottom: 5rem !important;
   }
   #main #about h2 {
+    font-size: 3rem !important;
+  }
+  #main #testimonial h2 {
     font-size: 3rem !important;
   }
 }
@@ -155,6 +184,12 @@ html {
     font-size: 2rem !important;
   }
   #main #works h2 {
+    font-size: 2rem !important;
+  }
+  #main #testimonial {
+    padding: 7rem 0;
+  }
+  #main #testimonial h2 {
     font-size: 2rem !important;
   }
 }
