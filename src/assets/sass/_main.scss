@@ -39,3 +39,35 @@ html {
     z-index: -1;
   }
 }
+// Main
+#main {
+  // Services
+  #services {
+    background-image: url(../images/priscilla-du-preez-XkKCui44iM0-unsplash.jpg);
+    @extend %bck_img;
+    padding: 10rem 0;
+    position: relative;
+    z-index: 1;
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: #000;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      opacity: 0.4;
+      z-index: -1;
+    }
+    h2 {
+      font-size: 3rem !important;
+    }
+    .wrapper {
+      height: 20rem;
+      padding: 2rem 1rem;
+      .line {
+        width: 6rem;
+        padding: 0.2rem 0;
+      }
+    }
+  }
+}

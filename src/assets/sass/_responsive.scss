@@ -11,6 +11,13 @@
       font-size: 2rem !important;
     }
   }
+  #main {
+    #services {
+      .line {
+        margin-bottom: 5rem !important;
+      }
+    }
+  }
 }
 
 // Medium devices (tablets, 768px and down)
@@ -48,6 +55,13 @@
       }
     }
   }
+  #main {
+    #services {
+      .wrapper {
+        height: 19rem !important;
+      }
+    }
+  }
 }
 
 // Extra Small devices (tablets, 320px and down)
@@ -63,6 +77,13 @@
       }
       p {
         font-size: 0.9rem;
+      }
+    }
+  }
+  #main {
+    #services {
+      h2 {
+        font-size: 2rem !important;
       }
     }
   }

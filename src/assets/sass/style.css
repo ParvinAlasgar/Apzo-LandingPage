@@ -2,7 +2,7 @@ html {
   font-size: 1rem;
 }
 
-#header {
+#main #services, #header {
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -40,9 +40,40 @@ html {
   z-index: -1;
 }
 
+#main #services {
+  background-image: url(../images/priscilla-du-preez-XkKCui44iM0-unsplash.jpg);
+  padding: 10rem 0;
+  position: relative;
+  z-index: 1;
+}
+#main #services::after {
+  content: "";
+  position: absolute;
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0.4;
+  z-index: -1;
+}
+#main #services h2 {
+  font-size: 3rem !important;
+}
+#main #services .wrapper {
+  height: 20rem;
+  padding: 2rem 1rem;
+}
+#main #services .wrapper .line {
+  width: 6rem;
+  padding: 0.2rem 0;
+}
+
 @media only screen and (max-width: 992px) {
   #header h1 {
     font-size: 2rem !important;
+  }
+  #main #services .line {
+    margin-bottom: 5rem !important;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -72,6 +103,9 @@ html {
     margin-bottom: 0.5rem;
     padding: 0.5rem !important;
   }
+  #main #services .wrapper {
+    height: 19rem !important;
+  }
 }
 @media only screen and (max-width: 320px) {
   #header nav {
@@ -85,5 +119,8 @@ html {
   }
   #header .content p {
     font-size: 0.9rem;
+  }
+  #main #services h2 {
+    font-size: 2rem !important;
   }
 }/*# sourceMappingURL=style.css.map */
