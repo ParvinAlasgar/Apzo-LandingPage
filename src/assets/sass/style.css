@@ -10,7 +10,7 @@ html {
 #header {
   background-image: url(../images/campaign-creators-gMsnXqILjp4-unsplash.jpg);
   height: 100vh;
-  position: absolute;
+  position: relative;
   width: 100%;
   z-index: 1;
 }

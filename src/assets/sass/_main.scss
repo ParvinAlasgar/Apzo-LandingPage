@@ -10,7 +10,7 @@ html {
   background-image: url(../images/campaign-creators-gMsnXqILjp4-unsplash.jpg);
   @extend %bck_img;
   height: 100vh;
-  position: absolute;
+  position: relative;
   width: 100%;
   z-index: 1;
   nav {
