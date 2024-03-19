@@ -251,6 +251,9 @@ html {
   #main #contact {
     padding: 7rem 0;
   }
+  #footer .bottom P {
+    font-size: 0.9rem !important;
+  }
 }
 @media only screen and (max-width: 320px) {
   #header nav {
@@ -267,5 +270,11 @@ html {
   }
   #main #services h2 {
     font-size: 2rem !important;
+  }
+  #footer .bottom P {
+    font-size: 0.8rem !important;
+  }
+  #footer .bottom ul {
+    justify-content: start !important;
   }
 }/*# sourceMappingURL=style.css.map */

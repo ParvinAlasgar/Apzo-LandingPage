@@ -101,6 +101,13 @@
       padding: 7rem 0;
     }
   }
+  #footer {
+    .bottom {
+      P {
+        font-size: 0.9rem !important;
+      }
+    }
+  }
 }
 
 // Extra Small devices (tablets, 320px and down)
@@ -123,6 +130,16 @@
     #services {
       h2 {
         font-size: 2rem !important;
+      }
+    }
+  }
+  #footer {
+    .bottom {
+      P {
+        font-size: 0.8rem !important;
+      }
+      ul {
+        justify-content: start !important;
       }
     }
   }
