@@ -5,12 +5,23 @@ html {
 #main #contact, #main #testimonial, #main #works, #main #about, #main #services, #header {
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+
+#main #contact::after, #main #testimonial::after, #main #works::after, #main #about::after, #main #services::after, #header::after {
+  content: "";
+  position: absolute;
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0.4;
+  z-index: -1;
 }
 
 #header {
   background-image: url(../images/campaign-creators-gMsnXqILjp4-unsplash.jpg);
   height: 100vh;
-  position: relative;
   width: 100%;
   z-index: 1;
 }
@@ -29,32 +40,10 @@ html {
 #header .content a {
   border-radius: 25px;
 }
-#header::after {
-  content: "";
-  position: absolute;
-  background-color: #000;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  opacity: 0.4;
-  z-index: -1;
-}
-
 #main #services {
   background-image: url(../images/priscilla-du-preez-XkKCui44iM0-unsplash.jpg);
   padding: 10rem 0;
-  position: relative;
   z-index: 1;
-}
-#main #services::after {
-  content: "";
-  position: absolute;
-  background-color: #000;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  opacity: 0.4;
-  z-index: -1;
 }
 #main #services h2 {
   font-size: 3rem !important;
@@ -70,7 +59,6 @@ html {
 #main #about {
   background-image: url(../images/jud-mackrill-Of_m3hMsoAA-unsplash.jpg);
   padding: 12rem 0;
-  position: relative;
   z-index: 1;
 }
 #main #about .content h2 {
@@ -79,19 +67,8 @@ html {
 #main #about .content a {
   border-radius: 2rem;
 }
-#main #about::after {
-  content: "";
-  position: absolute;
-  background-color: #000;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  opacity: 0.4;
-  z-index: -1;
-}
 #main #works {
   background-image: url(../images/austin-distel-wD1LRb9OeEo-unsplash.jpg);
-  position: relative;
   z-index: 1;
   padding: 15rem 0;
 }
@@ -101,16 +78,6 @@ html {
 #main #works .line {
   width: 6rem;
   padding: 0.2rem 0;
-}
-#main #works::after {
-  content: "";
-  position: absolute;
-  background-color: #000;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  opacity: 0.4;
-  z-index: -1;
 }
 #main #works .wrapper {
   cursor: pointer;
@@ -123,7 +90,6 @@ html {
 }
 #main #testimonial {
   background-image: url(../images/brooke-cagle-g1Kr4Ozfoac-unsplash.jpg);
-  position: relative;
   z-index: 1;
   padding: 15rem 0;
 }
@@ -134,34 +100,13 @@ html {
   width: 6rem;
   padding: 0.2rem 0;
 }
-#main #testimonial::after {
-  content: "";
-  position: absolute;
-  background-color: #000;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  opacity: 0.4;
-  z-index: -1;
-}
 #main #testimonial .author img {
   width: 4rem;
 }
 #main #contact {
   background-image: url(../images/alex-kotliarskyi-QBpZGqEMsKg-unsplash.jpg);
-  position: relative;
   z-index: 1;
   padding: 15rem 0;
-}
-#main #contact::after {
-  content: "";
-  position: absolute;
-  background-color: #000;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  opacity: 0.4;
-  z-index: -1;
 }
 #main #contact ul i {
   margin-right: 0.5rem;
@@ -193,9 +138,7 @@ html {
   #main #services .line {
     margin-bottom: 5rem !important;
   }
-  #main #about h2 {
-    font-size: 3rem !important;
-  }
+  #main #about h2,
   #main #testimonial h2 {
     font-size: 3rem !important;
   }
@@ -218,17 +161,13 @@ html {
   #main #about .content {
     width: 100% !important;
   }
+  #main #works h2,
+  #main #testimonial h2,
   #main #about .content h2 {
-    font-size: 2rem !important;
-  }
-  #main #works h2 {
     font-size: 2rem !important;
   }
   #main #testimonial {
     padding: 7rem 0;
-  }
-  #main #testimonial h2 {
-    font-size: 2rem !important;
   }
 }
 @media only screen and (max-width: 576px) {

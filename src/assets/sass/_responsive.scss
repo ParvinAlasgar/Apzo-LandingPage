@@ -17,11 +17,7 @@
         margin-bottom: 5rem !important;
       }
     }
-    #about {
-      h2 {
-        font-size: 3rem !important;
-      }
-    }
+    #about,
     #testimonial {
       h2 {
         font-size: 3rem !important;
@@ -53,21 +49,17 @@
     #about {
       .content {
         width: 100% !important;
-        h2 {
-          font-size: 2rem !important;
-        }
       }
     }
-    #works {
+    #works,
+    #testimonial,
+    #about .content {
       h2 {
         font-size: 2rem !important;
       }
     }
     #testimonial {
       padding: 7rem 0;
-      h2 {
-        font-size: 2rem !important;
-      }
     }
   }
 }

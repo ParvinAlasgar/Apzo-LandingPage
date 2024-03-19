@@ -1,16 +1,26 @@
 html {
   font-size: 1rem;
 }
-%bck_img {
+%background {
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+%after_div {
+  content: "";
+  position: absolute;
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0.4;
+  z-index: -1;
 }
 // Header
 #header {
   background-image: url(../images/campaign-creators-gMsnXqILjp4-unsplash.jpg);
-  @extend %bck_img;
+  @extend %background;
   height: 100vh;
-  position: relative;
   width: 100%;
   z-index: 1;
   nav {
@@ -29,14 +39,7 @@ html {
     }
   }
   &::after {
-    content: "";
-    position: absolute;
-    background-color: #000;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    opacity: 0.4;
-    z-index: -1;
+    @extend %after_div;
   }
 }
 // Main
@@ -44,19 +47,11 @@ html {
   // Services
   #services {
     background-image: url(../images/priscilla-du-preez-XkKCui44iM0-unsplash.jpg);
-    @extend %bck_img;
+    @extend %background;
     padding: 10rem 0;
-    position: relative;
     z-index: 1;
     &::after {
-      content: "";
-      position: absolute;
-      background-color: #000;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      opacity: 0.4;
-      z-index: -1;
+      @extend %after_div;
     }
     h2 {
       font-size: 3rem !important;
@@ -73,9 +68,8 @@ html {
   // about
   #about {
     background-image: url(../images/jud-mackrill-Of_m3hMsoAA-unsplash.jpg);
-    @extend %bck_img;
+    @extend %background;
     padding: 12rem 0;
-    position: relative;
     z-index: 1;
     .content {
       h2 {
@@ -86,21 +80,13 @@ html {
       }
     }
     &::after {
-      content: "";
-      position: absolute;
-      background-color: #000;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      opacity: 0.4;
-      z-index: -1;
+      @extend %after_div;
     }
   }
   // works
   #works {
     background-image: url(../images/austin-distel-wD1LRb9OeEo-unsplash.jpg);
-    @extend %bck_img;
-    position: relative;
+    @extend %background;
     z-index: 1;
     padding: 15rem 0;
     h2 {
@@ -111,14 +97,7 @@ html {
       padding: 0.2rem 0;
     }
     &::after {
-      content: "";
-      position: absolute;
-      background-color: #000;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      opacity: 0.4;
-      z-index: -1;
+      @extend %after_div;
     }
     .wrapper {
       cursor: pointer;
@@ -135,8 +114,7 @@ html {
   // Testimonial
   #testimonial {
     background-image: url(../images/brooke-cagle-g1Kr4Ozfoac-unsplash.jpg);
-    @extend %bck_img;
-    position: relative;
+    @extend %background;
     z-index: 1;
     padding: 15rem 0;
     h2 {
@@ -147,14 +125,7 @@ html {
       padding: 0.2rem 0;
     }
     &::after {
-      content: "";
-      position: absolute;
-      background-color: #000;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      opacity: 0.4;
-      z-index: -1;
+      @extend %after_div;
     }
     .author {
       img {
@@ -164,19 +135,11 @@ html {
   }
   #contact {
     background-image: url(../images/alex-kotliarskyi-QBpZGqEMsKg-unsplash.jpg);
-    @extend %bck_img;
-    position: relative;
+    @extend %background;
     z-index: 1;
     padding: 15rem 0;
     &::after {
-      content: "";
-      position: absolute;
-      background-color: #000;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      opacity: 0.4;
-      z-index: -1;
+      @extend %after_div;
     }
     ul i {
       margin-right: 0.5rem;
