@@ -2,7 +2,7 @@ html {
   font-size: 1rem;
 }
 
-#main #testimonial, #main #works, #main #about, #main #services, #header {
+#main #contact, #main #testimonial, #main #works, #main #about, #main #services, #header {
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -147,6 +147,44 @@ html {
 #main #testimonial .author img {
   width: 4rem;
 }
+#main #contact {
+  background-image: url(../images/alex-kotliarskyi-QBpZGqEMsKg-unsplash.jpg);
+  position: relative;
+  z-index: 1;
+  padding: 15rem 0;
+}
+#main #contact::after {
+  content: "";
+  position: absolute;
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0.4;
+  z-index: -1;
+}
+#main #contact ul i {
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+#main #contact .icons i {
+  font-size: 1.1rem;
+}
+#main #contact form input,
+#main #contact form textarea {
+  outline: none;
+}
+#main #contact form input::-moz-placeholder, #main #contact form textarea::-moz-placeholder {
+  color: #fff;
+}
+#main #contact form input::placeholder,
+#main #contact form textarea::placeholder {
+  color: #fff;
+}
+#main #contact form .btn {
+  margin-top: 1rem;
+  border-radius: 2rem !important;
+}
 
 @media only screen and (max-width: 992px) {
   #header h1 {
@@ -209,6 +247,9 @@ html {
   }
   #main #about h2 {
     font-size: 2rem !important;
+  }
+  #main #contact {
+    padding: 7rem 0;
   }
 }
 @media only screen and (max-width: 320px) {

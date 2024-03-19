@@ -162,4 +162,41 @@ html {
       }
     }
   }
+  #contact {
+    background-image: url(../images/alex-kotliarskyi-QBpZGqEMsKg-unsplash.jpg);
+    @extend %bck_img;
+    position: relative;
+    z-index: 1;
+    padding: 15rem 0;
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: #000;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      opacity: 0.4;
+      z-index: -1;
+    }
+    ul i {
+      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .icons i {
+      font-size: 1.1rem;
+    }
+    form {
+      input,
+      textarea {
+        outline: none;
+        &::placeholder {
+          color: #fff;
+        }
+      }
+      .btn {
+        margin-top: 1rem;
+        border-radius: 2rem !important;
+      }
+    }
+  }
 }
